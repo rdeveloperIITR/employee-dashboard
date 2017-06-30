@@ -1,3 +1,10 @@
+<?php 
+  session_start();
+  if($_SESSION['login']){
+    header("location:dashboard.php");
+    die;
+   }
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
